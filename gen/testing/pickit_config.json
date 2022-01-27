@@ -16,8 +16,13 @@
             "display_name": "Tal Rasha's Guardianship",
             "props": [
                 {
-                    "name": "ac",
-                    "arg1": ">900"
+                    "name": "defense",
+                    "args": {
+                        "1": {
+                            "min_value": 900
+                        }
+                    },
+                    "min_value": 900
                 }
             ]
         },
@@ -26,7 +31,31 @@
             "props": [
                 {
                     "name": "charged",
-                    "arg2": "teleport"
+                    "args": {
+                        "2": {
+                            "value": "teleport"
+                        },
+                        "4": {
+                            "min_value": 20
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "amulet",
+            ""
+            "props": [
+                {
+                    "name": "charged",
+                    "args": {
+                        "2": {
+                            "value": "teleport"
+                        },
+                        "4": {
+                            "min_value": 20
+                        }
+                    }
                 }
             ]
         },
@@ -35,14 +64,18 @@
             "quality": "normal",
             "item_class": "Elite",
             "props": [
-                {
-                    "name": "socketed",
-                    "arg1": 4
-                },
-                {
-                    "name": "res-all",
-                    "arg1": 45
-                }
+                [
+                    {
+                        "name": "socketed",
+                        "value": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "res-all",
+                        "min_value": 40
+                    }
+                ]
             ]
         },
         {

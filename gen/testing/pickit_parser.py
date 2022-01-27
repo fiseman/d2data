@@ -35,7 +35,7 @@ class Test:
 
         # to do, orange color support for runes, tokens, keys, essences
 
-        with open("pickit.json", "r",encoding = 'utf-8') as f:
+        with open("pickit_config.json", "r",encoding = 'utf-8') as f:
             self.f_pickit = json.loads(json.dumps(json.loads(json.dumps(json.load(f)).lower())).lower())
 
         with open("../output/item_armor.json", "r",encoding = 'utf-8') as f:
